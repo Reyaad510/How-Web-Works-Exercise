@@ -1,2 +1,31 @@
 Part One: Solidify Terminology
 
+1. What is HTTP?
+ HTTP stands for Hypertext Transfer Protocol. It's a Protocol used for transmitting hypertext documents(such as HTML) over the internet.
+
+ 2. What is URL?
+ URL stands for Uniform Resource Locator and is a reference or address used to locate resources on the Internet. It's a standardized way of specifiying the location of a resource such as webpage, a file, or a service. 
+
+ 3. What is DNS?
+DNS stands for Domain Name System. It translates easily memorizable domain names(Ex example.com) to the numerical IP addresses(like 192.0.2.1) needed for locatin and identifying computer services
+
+4. What is a query string?
+A query string is a part of a URL that contains data passed to a web server as parameters.It typically begins with a question mark. It consists of one or more key-value pairs seperated by ampersands(&).
+
+5. What are two HTTP verbs and how are they different?
+The two are GET and POST. GET: requests without side effects(dont' change server data) while POST requests have side effects(change data on server). GET arguments are passed along in query string while POST have arguments sent as body of the request(not query string)
+
+
+6. What is an HTTP request?
+    It is a message sent by a client(such as a web browser) to a server, typically to request a resrouce or perform a certain action. HTTP (Hypertext Transfer Protocol) is the protocol used for communication between clients and servers on the World Wide Web, and HTTP requests are a fundamental part of this communication process.
+
+
+7. What is an HTTP response?
+An HTTP response is a message sent by a server to a client in response to an HTTP request. It contains information about the status of the request and, optionally, the requested content. HTTP responses are a fundamental part of the client-server communication process in the Hypertext Transfer Protocol (HTTP), which is used for communication over the World Wide Web.
+
+8. What is an HTTP header? Give a couple examples of request and response headers you have seen.
+HTTP headers are key-value pairs of metadata sent between the client and server in HTTP requests and responses. They provide additional information about the request or response, such as the type of content being sent, the capabilities of the client or server, authentication credentials, caching directives, and more. Headers play a crucial role in the communication between clients and servers, enabling them to understand each other's capabilities and requirements. An example would be "Accept-Language" en-US"  indicates the preferred languages for the response content.
+"Content-Type: text/html" is a header that specifies the type and encoding of the content sent in the response body
+
+9. What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+DNS resolution, establishing a TCP connection(port 80 for HTTP or port 443 for HTTPS), HTTP Request, Server Processing, HTTP Response, and then rendering the webpage
